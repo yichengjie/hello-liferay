@@ -3,12 +3,12 @@
 <%@ page contentType="text/html; UTF-8" pageEncoding="UTF-8" %>
 
 <p>
-	<b><liferay-ui:message key="hellomvcporlet.caption"/></b>
-	<button type="button" id="testBtn">测试Ajax</button><br>
+	<b>测试我的Ajax操作</b><br><br>
+	<button type="button" id="testBtn">Ajax测试</button><br>
 	<div id="div1"></div>
 </p>
 
-<portlet:resourceURL var="ajaxUrl" id="rentalsUserListURL" />
+<portlet:resourceURL var="ajaxUrl" id="addOper" />
 <script type="text/javascript">
 	$(function (){
 		$("#testBtn").click(function(){

@@ -6,6 +6,6 @@ package com.yicj.mvc.portlet.constants;
 public class HelloMvcPorletPortletKeys {
 
 	public static final String HELLOMVCPORLET =
-		"com_yicj_mvc_porlet_HelloMvcPorletPortlet";
+		"com_yicj_mvc_porlet_HelloMvcPortletPortlet";
 
 }
