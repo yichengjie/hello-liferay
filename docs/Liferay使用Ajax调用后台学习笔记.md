@@ -5,7 +5,7 @@
     <%
         String contextPath = request.getContextPath();
     %>
-    <script type="text/javascript" src="<%=contextPath%>/js/jquery3.6.0.js" />
+    <script type="text/javascript" src="<%=contextPath%>/js/jquery-3.6.0.js" />
     ```
 4. view.jsp页面中添加页面元素
     ```text

@@ -1,5 +1,6 @@
 package com.yicj.mvc.porlet.portlet;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.liferay.portal.kernel.util.ParamUtil;
 import com.yicj.mvc.porlet.constants.HelloMvcPorletPortletKeys;
 
@@ -15,6 +16,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 
 /**
  * @author yicj1
@@ -46,6 +48,9 @@ public class HelloMvcPorletPortlet extends MVCPortlet {
 		logger.info("username : {}", username);
 		logger.info("password : {}", password);
 		resourceResponse.setContentType("text/html");
-		resourceResponse.getWriter().write("Resource served successfully!");
+		PrintWriter out = resourceResponse.getWriter();
+		out.write("Resource served successfully!");
+		out.flush();
+		out.close();
 	}
 }
