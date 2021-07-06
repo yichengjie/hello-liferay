@@ -1,8 +1,7 @@
-package com.yicj.mvc.porlet.portlet;
+package com.yicj.mvc.portlet.portlet;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.liferay.portal.kernel.util.ParamUtil;
-import com.yicj.mvc.porlet.constants.HelloMvcPorletPortletKeys;
+import com.yicj.mvc.portlet.constants.HelloMvcPorletPortletKeys;
 
 import com.liferay.portal.kernel.portlet.bridges.mvc.MVCPortlet;
 

@@ -1,4 +1,4 @@
-package com.yicj.mvc.porlet.constants;
+package com.yicj.mvc.portlet.constants;
 
 /**
  * @author yicj1
