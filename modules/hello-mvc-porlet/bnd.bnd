@@ -1,0 +1,4 @@
+Bundle-Name: hello-mvc-porlet
+Bundle-SymbolicName: com.yicj.mvc.porlet
+Bundle-Version: 1.0.0
+Export-Package: com.yicj.mvc.porlet.constants
