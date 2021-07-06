@@ -9,14 +9,12 @@
 </p>
 
 <portlet:resourceURL var="ajaxUrl" id="rentalsUserListURL" />
-
 <script type="text/javascript">
 	$(function (){
 		$("#testBtn").click(function(){
 			doAjax() ;
 		});
 	}) ;
-
 	function doAjax (){
 		$.ajax({
 			url: '${ajaxUrl}',
