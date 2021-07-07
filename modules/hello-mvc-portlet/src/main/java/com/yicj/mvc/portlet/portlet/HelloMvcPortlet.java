@@ -5,10 +5,7 @@ import com.yicj.mvc.portlet.constants.HelloMvcPortletKeys;
 
 import com.liferay.portal.kernel.portlet.bridges.mvc.MVCPortlet;
 
-import javax.portlet.Portlet;
-import javax.portlet.PortletException;
-import javax.portlet.ResourceRequest;
-import javax.portlet.ResourceResponse;
+import javax.portlet.*;
 
 import org.osgi.service.component.annotations.Component;
 import org.slf4j.Logger;
@@ -37,6 +34,16 @@ import java.io.PrintWriter;
 )
 public class HelloMvcPortlet extends MVCPortlet {
 	private Logger logger = LoggerFactory.getLogger(HelloMvcPortlet.class);
+
+
+	@ProcessAction(name = "addFormUser")
+	public void addFormUser(ActionRequest actionRequest, ActionResponse actionResponse) throws IOException, PortletException {
+		String username = ParamUtil.getString(actionRequest, "username") ;
+		String password = ParamUtil.getString(actionRequest, "password") ;
+		logger.info("username : {}", username);
+		logger.info("password : {}", password);
+
+	}
 
 
 	@Override

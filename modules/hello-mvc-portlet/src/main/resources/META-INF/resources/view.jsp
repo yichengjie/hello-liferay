@@ -8,6 +8,13 @@
 	<div id="div1"></div>
 </p>
 
+<p>
+	<b>测试我的表单提交</b><br/>
+	<form action ="">
+		
+	</form>
+</p>
+
 <portlet:resourceURL var="ajaxUrl" id="addOper" />
 <script type="text/javascript">
 	$(function (){
