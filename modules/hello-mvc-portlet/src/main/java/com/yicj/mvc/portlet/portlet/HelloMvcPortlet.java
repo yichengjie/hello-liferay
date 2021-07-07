@@ -1,7 +1,7 @@
 package com.yicj.mvc.portlet.portlet;
 
 import com.liferay.portal.kernel.util.ParamUtil;
-import com.yicj.mvc.portlet.constants.HelloMvcPorletPortletKeys;
+import com.yicj.mvc.portlet.constants.HelloMvcPortletKeys;
 
 import com.liferay.portal.kernel.portlet.bridges.mvc.MVCPortlet;
 
@@ -29,14 +29,15 @@ import java.io.PrintWriter;
 		"javax.portlet.display-name=HelloMvcPortlet",
 		"javax.portlet.init-param.template-path=/",
 		"javax.portlet.init-param.view-template=/view.jsp",
-		"javax.portlet.name=" + HelloMvcPorletPortletKeys.HELLOMVCPORLET,
+		"javax.portlet.name=" + HelloMvcPortletKeys.HELLOMVCPORLET,
 		"javax.portlet.resource-bundle=content.Language",
 		"javax.portlet.security-role-ref=power-user,user"
 	},
 	service = Portlet.class
 )
-public class HelloMvcPorletPortlet extends MVCPortlet {
-	private Logger logger = LoggerFactory.getLogger(HelloMvcPorletPortlet.class);
+public class HelloMvcPortlet extends MVCPortlet {
+	private Logger logger = LoggerFactory.getLogger(HelloMvcPortlet.class);
+
 
 	@Override
 	public void serveResource(ResourceRequest resourceRequest, ResourceResponse resourceResponse) throws IOException, PortletException {

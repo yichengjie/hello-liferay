@@ -41,7 +41,7 @@
     ```
 7. 编写后台处理逻辑
     ```java
-    public class HelloMvcPorletPortlet extends MVCPortlet {
+    public class HelloMvcPortlet extends MVCPortlet {
         // 这里需要按自己需要引入log4j依赖即可
         private Logger logger = LoggerFactory.getLogger(HelloMvcPorletPortlet.class);
         @Override
