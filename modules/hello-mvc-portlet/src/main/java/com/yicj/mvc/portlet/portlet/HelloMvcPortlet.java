@@ -35,9 +35,17 @@ import java.io.PrintWriter;
 public class HelloMvcPortlet extends MVCPortlet {
 	private Logger logger = LoggerFactory.getLogger(HelloMvcPortlet.class);
 
-
-	@ProcessAction(name = "addFormUser")
-	public void addFormUser(ActionRequest actionRequest, ActionResponse actionResponse) throws IOException, PortletException {
+	
+	/**
+	 * 登录业务处理
+	 * 注意@ProcessAction中的name要与portlet:actionURL中的name对应
+	 * @param actionRequest
+	 * @param actionResponse
+	 * @throws IOException
+	 * @throws PortletException
+	 */
+	@ProcessAction(name = "loginAction")
+	public void loginAction(ActionRequest actionRequest, ActionResponse actionResponse) throws IOException, PortletException {
 		String username = ParamUtil.getString(actionRequest, "username") ;
 		String password = ParamUtil.getString(actionRequest, "password") ;
 		logger.info("username : {}", username);

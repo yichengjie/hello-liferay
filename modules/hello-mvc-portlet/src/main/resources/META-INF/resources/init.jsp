@@ -9,6 +9,6 @@ taglib uri="http://liferay.com/tld/ui" prefix="liferay-ui" %>
 <%
     String contextPath = request.getContextPath();
 %>
-<script type="text/javascript" src="<%=contextPath%>/js/jquery.js" />
+<script type="text/javascript" src="<%=contextPath%>/js/jquery.js"></script>
 <liferay-theme:defineObjects />
 <portlet:defineObjects />

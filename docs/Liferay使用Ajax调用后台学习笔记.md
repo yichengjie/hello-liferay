@@ -61,7 +61,7 @@
     ```
 8. 测试结果
     ```text
-    2021-07-06 07:42:44.271 INFO  [http-nio-8080-exec-8][HelloMvcPorletPortlet:45] resourceID : addOper
-    2021-07-06 07:42:44.271 INFO  [http-nio-8080-exec-8][HelloMvcPorletPortlet:46] username : yicj
-    2021-07-06 07:42:44.272 INFO  [http-nio-8080-exec-8][HelloMvcPorletPortlet:47] password : 123
+    2021-07-06 07:42:44.271 INFO  resourceID : addOper
+    2021-07-06 07:42:44.271 INFO  username : yicj
+    2021-07-06 07:42:44.272 INFO  password : 123
     ```
