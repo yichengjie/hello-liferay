@@ -1,7 +1,7 @@
 1. 创建mvc类型的portlet
 2. view.jsp页面中添加表单元素
     ```text
-    <%--表单提交url地址, 注意form 的 method为post，action与portlet:actionURL的var值对应--%>
+    <%--注意form 的 method为post，action与portlet:actionURL的var值对应--%>
     <portlet:actionURL var = "loginURL" name = "loginAction" />
     <p>
         <b>登录表单提交</b><br/>
@@ -31,6 +31,7 @@
             logger.info("username : {}", username);
             logger.info("password : {}", password);
         }
+    }
     ```
 4. 测试结果
     ```text
