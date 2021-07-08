@@ -1,6 +1,10 @@
 package com.yicj.mvc.portlet.portlet;
 
 import com.liferay.portal.kernel.util.ParamUtil;
+import com.liferay.portal.kernel.util.PortalUtil;
+import com.liferay.portal.kernel.util.PropertiesParamUtil;
+import com.liferay.portal.util.PortalImpl;
+import com.liferay.portal.util.PropsUtil;
 import com.yicj.mvc.portlet.constants.HelloMvcPortletKeys;
 
 import com.liferay.portal.kernel.portlet.bridges.mvc.MVCPortlet;
@@ -50,7 +54,11 @@ public class HelloMvcPortlet extends MVCPortlet {
 		String password = ParamUtil.getString(actionRequest, "password") ;
 		logger.info("username : {}", username);
 		logger.info("password : {}", password);
-
+		
+		//PortalUtil.get*
+		//PropertiesParamUtil.get
+		String prop1 = PropsUtil.get("prop1");
+		logger.info("prop1 : {}", prop1);
 	}
 
 

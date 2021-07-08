@@ -2,3 +2,4 @@ Bundle-Name: hello-mvc-portlet
 Bundle-SymbolicName: com.yicj.mvc.portlet
 Bundle-Version: 1.0.0
 Export-Package: com.yicj.mvc.portlet.constants
+Import-Package: !okhttp3,!org.glassfish.jersey,!org.glassfish.jersey.internal.spi,!org.glassfish.jersey.internal.util,*
