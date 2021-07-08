@@ -11,6 +11,7 @@
    ```text
    //portal-ext.properties 中添加配置
    web.server.protocol=https
+   redirect.url.security.mode=domain
    ```
 4. 关闭用户条款
    ```text
