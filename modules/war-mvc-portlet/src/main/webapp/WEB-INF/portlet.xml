@@ -4,18 +4,20 @@
 	<portlet>
 		<portlet-name>war-mvc-portlet</portlet-name>
 		<display-name>war-mvc-portlet</display-name>
-		<portlet-class>com.liferay.portal.kernel.portlet.bridges.mvc.MVCPortlet</portlet-class>
+		<portlet-class>org.springframework.web.portlet.DispatcherPortlet</portlet-class>
 		<init-param>
-			<name>template-path</name>
-			<value>/</value>
+			<name>contextConfigLocation</name>
+			<!-- 这里配置spring的文件， -->
+			<value>/WEB-INF/spring-context/sprngmvc.xml</value>
 		</init-param>
 		<init-param>
 			<name>view-template</name>
-			<value>/view.jsp</value>
+			<value>/pages/jsp/view.jsp</value>
 		</init-param>
 		<expiration-cache>0</expiration-cache>
 		<supports>
 			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
 		</supports>
 		<resource-bundle>content.Language</resource-bundle>
 		<portlet-info>

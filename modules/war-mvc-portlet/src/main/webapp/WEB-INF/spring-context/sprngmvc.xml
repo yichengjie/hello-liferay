@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd 
+	http://www.springframework.org/schema/context 
+	http://www.springframework.org/schema/context/spring-context.xsd 
+	http://www.springframework.org/schema/mvc 
+	http://www.springframework.org/schema/mvc/spring-mvc.xsd"
+>
+	<context:component-scan base-package="com.yicj.portlet.mvc**" />
+	<mvc:annotation-driven/>
+	
+	<bean id ="springPortlet" class = "com.yicj.portlet.mvc.SpringPortlet" />
+	<bean id ="portletModeHandlerMapping" class ="org.springframework.web.portlet.handler.PortletModeHandlerMapping">
+		<property name="portletModeMap">
+			<map>
+				<entry key ="view">
+					<ref bean ="springPortlet"/>
+				</entry>
+			</map>
+		</property>
+	</bean>
+	
+	<bean id ="viewResolver" class ="org.springframework.web.servlet.view.InternalResourceViewResolver" >
+		<property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />
+		<property name="prefix" value ="/pages/jsp/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+</beans>

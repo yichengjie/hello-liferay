@@ -1,5 +1,15 @@
 <?xml version="1.0"?>
 
-<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
-
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+	<servlet>
+		<servlet-name>viewRendererServlet</servlet-name>
+		<servlet-class>com.liferay.portletmvc4spring.ViewRendererServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>viewRendererServlet</servlet-name>
+		<url-pattern>/WEB-INF/servlet/view</url-pattern>
+	</servlet-mapping>
 </web-app>
