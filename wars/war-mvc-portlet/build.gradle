@@ -14,9 +14,12 @@ buildscript {
 apply plugin: "com.liferay.css.builder"
 
 dependencies {
-	compileOnly group: "com.liferay.portal", name: "release.dxp.api"
+	compileOnly group: "com.liferay.portal", name: "com.liferay.portal.kernel"
+	compileOnly group: "javax.portlet", name: "portlet-api"
+	compileOnly group: "javax.servlet", name: "javax.servlet-api"
 	cssBuilder group: "com.liferay", name: "com.liferay.css.builder", version: "3.0.2"
-	portalCommonCSS group: "com.liferay", name: "com.liferay.frontend.css.common"
+	portalCommonCSS group: "com.liferay", name: "com.liferay.frontend.css.common", version: "5.0.2"
+
 	implementation group: 'javax.servlet.jsp.jstl', name: 'jstl-api', version: '1.2'
 	implementation group: 'javax.servlet.jsp.jstl', name: 'jstl', version: '1.2'
 	implementation group: 'org.springframework', name: 'spring-context', version: '4.3.30.RELEASE'

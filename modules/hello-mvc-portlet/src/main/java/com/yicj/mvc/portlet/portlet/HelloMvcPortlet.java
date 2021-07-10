@@ -1,10 +1,9 @@
 package com.yicj.mvc.portlet.portlet;
 
 import com.liferay.portal.kernel.util.ParamUtil;
-import com.liferay.portal.kernel.util.PortalUtil;
-import com.liferay.portal.kernel.util.PropertiesParamUtil;
-import com.liferay.portal.util.PortalImpl;
-import com.liferay.portal.util.PropsUtil;
+import com.liferay.portal.kernel.util.PropsUtil;
+//import com.liferay.portal.util.PortalImpl;
+//import com.liferay.portal.util.PropsUtil;
 import com.yicj.mvc.portlet.constants.HelloMvcPortletKeys;
 
 import com.liferay.portal.kernel.portlet.bridges.mvc.MVCPortlet;
